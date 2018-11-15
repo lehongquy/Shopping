@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ShopOnline</string>
+    <string name="sp">Sản phẩm mới nhất :</string>
+    <string name="hello_blank_fragment">hello</string>
+</resources>

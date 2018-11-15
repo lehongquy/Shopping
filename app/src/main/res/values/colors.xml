@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colortoolbar">#f9a825
+    </color>
+    <color name="colordau">#c17900
+
+    </color>
+    <color name="colornhat">#ffd95a
+
+    </color>
+    <color name="menu">#FFF</color>
+</resources>
