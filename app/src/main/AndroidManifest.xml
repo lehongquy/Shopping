@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.fpt.lenovo.shoponline">
+    package="edu.fpt.lenovo.shopping">
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
 
     <application
         android:allowBackup="true"
@@ -14,13 +12,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".activity.HelloActivity"
-            android:screenOrientation="portrait"
+            android:name="edu.fpt.lenovo.shopping.activity.LaptopActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="edu.fpt.lenovo.shopping.activity.HelloActivity"
+            android:exported="true"
             android:windowSoftInputMode="adjustPan|adjustResize">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,26 +32,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="edu.fpt.lenovo.shopping.activity.MainActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.DienThoaiActivity"
+            android:name="edu.fpt.lenovo.shopping.activity.DienThoaiActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LapTopActivity"
+            android:name="edu.fpt.lenovo.shopping.activity.ChiTietSanPham"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".activity.LienHeActivity"
+            android:name="edu.fpt.lenovo.shopping.activity.GiohangActivity"
             android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.ThongTinActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.ChiTietSanPham"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".activity.GiohangActivity"
-            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

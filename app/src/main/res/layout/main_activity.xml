@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <android.support.v4.widget.DrawerLayout
+    <androidx.drawerlayout.widget.DrawerLayout
         android:id="@+id/drawerlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,13 +17,13 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <android.support.v7.widget.Toolbar
+            <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbarmanhinhchinh"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@color/colortoolbar"
                 app:title="Trang chủ"
-                app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+                app:titleTextColor="#fff"></androidx.appcompat.widget.Toolbar>
 
             <ViewFlipper
                 android:id="@+id/viewlipper"
@@ -41,24 +41,27 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
-                    android:text="Sản phẩm mới nhất :"
+                    android:text="@string/spnew"
                     android:textColor="@color/colortoolbar"
                     android:textSize="20sp" />
 
-                <android.support.v7.widget.RecyclerView
+                <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recycleview"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent" />
 
-                </android.support.v7.widget.RecyclerView>
+
             </LinearLayout>
         </LinearLayout>
 
-        <android.support.design.widget.NavigationView
+
+
+        <com.google.android.material.navigation.NavigationView
             android:id="@+id/navigationview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="start">
+            android:layout_gravity="start"
+            >
 
             <ListView
                 android:id="@+id/listviewmanhinhchinh"
@@ -66,6 +69,6 @@
                 android:layout_height="wrap_content">
 
             </ListView>
-        </android.support.design.widget.NavigationView>
-    </android.support.v4.widget.DrawerLayout>
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
 </LinearLayout>

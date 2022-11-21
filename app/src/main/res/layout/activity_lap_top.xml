@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.LapTopActivity">
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:background="@color/colortoolbar"
         app:title="LapTop"
         app:titleTextColor="#fff"
         android:id="@+id/toolbarlaptop"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+        android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
     <ListView
         android:id="@+id/listviewlaptop"
         android:layout_width="match_parent"

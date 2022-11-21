@@ -26,7 +26,7 @@
             android:id="@+id/textviewloaisp"
             android:textColor="#f20"
             android:textSize="25dp"
-            android:text="Loại sản phẩm"
+            android:text="@string/loaisp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
     </LinearLayout>

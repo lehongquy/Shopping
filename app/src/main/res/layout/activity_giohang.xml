@@ -8,13 +8,13 @@
     android:weightSum="10"
     tools:context=".activity.GiohangActivity">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbargiohang"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colortoolbar"
         app:title="Giỏ hàng"
-        app:titleTextColor="#fff"></android.support.v7.widget.Toolbar>
+        app:titleTextColor="#fff"></androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="Giỏ hàng bạn đang trống"
+                android:text="@string/thongbao"
                 android:textSize="30sp" />
 
             <ListView
@@ -61,7 +61,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tổng tiền"
+                    android:text="@string/tongtien"
                     android:textColor="#F20"
                     android:textSize="30sp" />
             </LinearLayout>
@@ -76,7 +76,7 @@
                     android:id="@+id/textviewtongtien"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Giá trị"
+                    android:text="@string/giatri"
                     android:textColor="#F20"
                     android:textSize="30sp" />
             </LinearLayout>
@@ -90,7 +90,7 @@
         android:background="@color/colornhat"
 android:layout_margin="5dp"
         android:layout_weight="1"
-        android:text="Thanh toán giỏ hàng"
+        android:text="@string/btthanhtoan"
         android:textSize="20sp" />
 
     <Button
@@ -100,6 +100,6 @@ android:layout_margin="5dp"
         android:background="@color/colornhat"
 android:layout_margin="5dp"
         android:layout_weight="1"
-        android:text="Tiếp tục mua hàng"
+        android:text="@string/ttmuahang"
         android:textSize="20sp" />
 </LinearLayout>

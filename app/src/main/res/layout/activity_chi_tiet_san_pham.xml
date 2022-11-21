@@ -7,13 +7,13 @@
     android:orientation="vertical"
     tools:context=".activity.ChiTietSanPham">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbarchitietsanpham"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/colortoolbar"
         app:title="Chi tiết sản phẩm"
-        app:titleTextColor="#ffffff"></android.support.v7.widget.Toolbar>
+        app:titleTextColor="#ffffff"></androidx.appcompat.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Tên sản phẩm"
+                android:text="@string/tensanpham"
                 android:textColor="#f0000000"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -47,7 +47,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:text="Giá sản phẩm"
+                android:text="@string/giasp"
                 android:textColor="#f20"
                 android:textSize="20sp" />
 
@@ -67,7 +67,7 @@
                 android:layout_width="155dp"
                 android:layout_height="wrap_content"
                 android:background="@color/colornhat"
-                android:text="Thêm giỏ hàng"
+                android:text="@string/themgiohang"
                 android:textColor="#fff"
                 android:textSize="15sp" />
         </LinearLayout>
@@ -82,7 +82,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:text="Chi tiết sản phẩm"
+            android:text="@string/chitietsp"
             android:textColor="#f0000000"
             android:textSize="30sp" />
 
@@ -97,7 +97,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:paddingBottom="10dp"
-                android:text="Chi tiết"
+                android:text="@string/ct"
                 android:textSize="20sp" />
         </ScrollView>
     </LinearLayout>

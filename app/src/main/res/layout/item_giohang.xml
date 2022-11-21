@@ -31,7 +31,7 @@
             android:id="@+id/textviewgiohang"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tên sản phẩm"
+            android:text="@string/tensanpham"
             android:textColor="#000000"
             android:textSize="25sp" />
 
@@ -40,7 +40,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="3dp"
-            android:text="Gía món hàng"
+            android:text="@string/giasp"
             android:textColor="#F20"
             android:textSize="15sp" />
 
